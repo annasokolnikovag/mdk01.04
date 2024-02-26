@@ -1,0 +1,26 @@
+/* Подвиг 3. Продолжите программу. Перед функцией main объявите прототип функции с именем get_geom, которая принимает два целочисленных параметра, вычисляет их среднее геометрическое по формуле:
+g= корень(a⋅b)
+и возвращает вычисленное значение g. Реализацию функции get_geom пропишите после функции main. В функции main вызовите функцию get_geom для переменных a и b. Вычисленное значение выведите в консоль в виде вещественного числа с точностью до сотых. 
+
+https://stepik.org/lesson/1191304/step/5?unit=1204292 */
+
+#include <stdio.h>
+#include <math.h>
+
+float get_geom(int, int);
+
+int main(void)
+{
+    int a, b;
+    scanf("%d, %d", &a, &b);
+
+    float res = get_geom(a, b);
+    printf("%.2f", res);
+    return 0;
+}
+
+float get_geom(int a, int b)
+{
+    float g = sqrt(a * b);
+    return g;
+}

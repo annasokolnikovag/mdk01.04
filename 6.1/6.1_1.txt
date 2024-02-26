@@ -1,0 +1,18 @@
+/** Подвиг 2. В программе ниже объявите функцию с именем show_info без параметров и без возвращаемого значения. Функция show_info должна выводить в консоль строку (без кавычек и с символом переноса на следующую строку):
+"It's my first function"
+В функции main вызовите функцию show_info.
+
+https://stepik.org/lesson/1191302/step/4?unit=1204290 */
+
+#include <stdio.h>
+
+void show_info(void)
+{
+         puts("It's my first function");
+}
+ 
+int main(void)
+{
+    show_info();
+    return 0;
+}
